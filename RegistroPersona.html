@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="EstiloFormulario.css">
+    </head>
+    <body>
+        
+    <a href="ListadoPersonas.html">Listado de Personas </a>
+    <br>
+    <a href="home.html">Volver al inicio</a>
+        <div><label class="label-Titulo">Formulario Para Registro de Personas</label>
+        </div>
+        <br>
+        <form action="/my-handling-form-page" method="post">
+
+            <ul>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="sNombre" name="user_name">
+                </li>
+                <li>
+                    <label for="sApellido">Apellido:</label>
+                    <input type="text" id="sApellido" name="sApellido">
+                </li>
+                <li>
+                    <label for="nNumeroCedula">Numero de Cedula:</label>
+                    <input type="number" id="nNumeroCedula"
+                        name="nNumeroCedula">
+                </li>
+                <li>
+                    <label for="nEdad">Edad:</label>
+                    <input type="number" id="nEdad"
+                        name="nEdad">
+                </li>
+                <li>
+                    <label for="nTelefono">Numero de Telefono:</label>
+                    <input type="tel" id="nTelefono"
+                        name="nTelefono">
+                </li>
+                
+                <li>
+                    <label for="sEspecialidad">Especialidad Requerida:</label>
+                    <select id="sEspecialidad" name="sEspecialidad">
+                        <option value="0" selected>Seleccione una especialidad</option>
+                        <option value="OtorinoNaringologo">OtorinoNssringologo</option>
+                        <option value="Ortopedia">Ortopedia</option>
+                        <option value="Corazon">Corazon</option>
+                        <option value="Odontología">Especialista en Odontología</option>
+                      </select>
+                </li>
+                <li>
+                    <label for="sConsultorio">Consultorio:</label>
+                    <input type="text" id="sConsultorio"
+                        name="sConsultorio">
+                </li>
+                <li>
+                    <label for="mail">Correo de Contacto:</label>
+                    <input type="email" id="mail" name="user_mail"
+                        onkeyup="validate()">
+                    <label for="result"></label> <input class="textResult"
+                        type="text" id="result" value>
+
+                </li>
+               
+
+            </ul>
+            <br>
+            <br>
+            <div class="button">
+                <button type="button" onclick="GuardarPersona()"
+                    id="btnGuardar">Guardar Persona</button>
+            </div>
+        </form>
+
+        <script src="jsAplicacionpersona.js"></script>
+    </body>
+</html>
+
